@@ -7,23 +7,23 @@ public class ZhyrovHW4P2 {
     }
 
         static String findCharacrers (String str) {
-            String conStr = "";
-            String conStr1 = "";
+            String doble = "";
+            String uniq = "";
             int index = 0;
             int len = str.length();
             while (index < len){
                 char ch = str.charAt(index++);
                 if (str.substring(index).contains(String.valueOf(ch))&&!conStr.contains(String.valueOf(ch))){
-                    conStr = conStr + ch;
+                    doble = doble + ch;
                 }
             }
             index = 0;
             while (index < len){
                 char ch = str.charAt(index++);
-                if (!conStr.contains(String.valueOf(ch))){
-                    conStr1 = conStr1 + ch;
+                if (!doble.contains(String.valueOf(ch))){
+                    uniq = uniq + ch;
                 }
             }
-            return conStr1;
+            return uniq;
         }
 }
