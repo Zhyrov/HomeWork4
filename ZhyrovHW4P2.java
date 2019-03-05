@@ -13,7 +13,7 @@ public class ZhyrovHW4P2 {
             int len = str.length();
             while (index < len){
                 char ch = str.charAt(index++);
-                if (str.substring(index).contains(String.valueOf(ch))&&!conStr.contains(String.valueOf(ch))){
+                if (str.substring(index).contains(String.valueOf(ch))&&!doble.contains(String.valueOf(ch))){
                     doble = doble + ch;
                 }
             }
